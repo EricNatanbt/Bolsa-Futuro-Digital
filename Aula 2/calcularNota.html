@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Nota</title>
+</head>
+<body>
+    <h1>Calcular Nota</h1>
+
+</body>
+
+<script>
+
+    var nota1 = prompt("Digite a primeira nota: ");
+    var nota2 = prompt("Digite a segunda nota: ");
+
+    nota1 = parseFloat(nota1);
+    nota2 = parseFloat(nota2);
+    
+    function calcularMedia(nota1, nota2) {
+        return (nota1 + nota2) / 2;
+    }
+
+    var media = calcularMedia(nota1, nota2);
+    
+    function verificarAprovacao(media) {
+        if (media > 5)
+            return "Aprovado! Com média " + media;
+        else 
+        return "Reprovado! Com média " + media;
+    }
+
+    var resultado = verificarAprovacao(nota1, nota2);
+    alert(resultado);
+
+    </script>
+
+</html>

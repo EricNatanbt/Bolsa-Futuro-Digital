@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Média</title>
+</head>
+<body>
+    <h1>Calcular Média</h1>
+
+</body>
+
+<script>
+
+    var numero1 = prompt("Digite o primeiro número: ");
+    var numero2 = prompt("Digite o segundo número: ");
+
+    numero1 = parseFloat(numero1);
+    numero2 = parseFloat(numero2);
+    
+    function calcularMedia(num1, num2) {
+        return (num1 + num2) / 2;
+    }
+
+    var media = calcularMedia(numero1, numero2);
+    alert("A média dos números é: " + media);
+
+</script>
+
+</html>
