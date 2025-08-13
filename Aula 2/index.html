@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo maluco</title>
+</head>
+<body>
+    <h1>Jogo todo estranho</h1>
+
+</body>
+
+<script>
+
+    var numero1 = prompt("Digite um número Jogador 1:");
+    var numero2 = prompt("Digite um número Jogador 2:");
+
+    numero1 = parseFloat(numero1);
+    numero2 = parseFloat(numero2);
+
+    var sorteio = Math.random() * 2;
+    var sorteio = parseInt(sorteio);
+    
+
+    function verificarJogo(sorteio, numero1, numero2) {
+        if (sorteio == 0 && (numero1 > numero2))
+            return "Sorteio = " + sorteio + ", Jogador 2 venceu com menor numero";
+        else if (sorteio == 0 && (numero1 < numero2))
+            return "Sorteio = " + sorteio + ", Jogador 1 venceu com menor numero";
+        else if (sorteio == 1 && (numero1 > numero2))
+            return "Sorteio = " + sorteio + ", Jogador 1 venceu com maior numero";
+        else if (sorteio == 1 && (numero1 < numero2))
+            return "Sorteio = " + sorteio + ", Jogador 2 venceu com maior numero";
+        else 
+        return "Empate, ambos os jogadores escolheram o mesmo número";
+    }
+
+    var resultado = verificarJogo(sorteio, numero1, numero2);
+    alert(resultado);
+
+</script>
+
+</html>
