@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botao</title>
+</head>
+<body>
+    
+    <h1 style="color: chocolate;">🍪 Biscoito da sorte 🍪</h1>
+    <button type="botao" onclick="mostrarMensagem()" style="color: white; background-color: chocolate;" >Clique para receber sua mensagem</button>
+    
+    
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+
+</body>
+
+<script>
+    
+    var mostrarMensagem = function () {
+        if (Math.random() < 0.5) {
+            alert("Hoje é seu dia de sorte!");
+        } else {
+            alert("A sorte não está do seu lado hoje.");
+        }
+    }
+
+    </script>
+
+
+</html>

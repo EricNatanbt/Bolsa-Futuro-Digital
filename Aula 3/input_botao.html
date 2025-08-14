@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texto e botao</title>
+</head>
+<body>
+
+    <h1 style="color: cornflowerblue;">Digite seu nome</h1>
+
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <button type="button" onclick="mostrarNome()">Enviar</button>
+
+    <style>
+        body {
+            background-color: rgb(240, 248, 255);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: cornflowerblue;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+</body>
+
+<script>
+
+    var mostrarNome = function() {
+       alert("Olá, " + nome.value + "! Seja Bem-Vindo(a)!");
+    }
+
+    // function mostrarNome1 () {
+    //     var teste = document.querySelector('#nome').value;
+    //     alert(teste)
+    // }
+    
+    </script>
+</html>
