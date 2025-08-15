@@ -3,49 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>texto e botao</title>
+    <title>Texto e Botão</title>
+    <link rel="stylesheet" href="estilo_input_butao.css">
 </head>
 <body>
 
-    <h1 style="color: cornflowerblue;">Digite seu nome</h1>
+    <h1>Digite seu nome</h1>
 
     <input type="text" id="nome" placeholder="Digite seu nome">
     <button type="button" onclick="mostrarNome()">Enviar</button>
 
-    <style>
-        body {
-            background-color: rgb(240, 248, 255);
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+    <script>
+        var mostrarNome = function() {
+            alert("Olá, " + nome.value + "! Seja Bem-Vindo(a)!");
         }
-        input {
-            padding: 10px;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: cornflowerblue;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
-
-</body>
-
-<script>
-
-    var mostrarNome = function() {
-       alert("Olá, " + nome.value + "! Seja Bem-Vindo(a)!");
-    }
-
-    // function mostrarNome1 () {
-    //     var teste = document.querySelector('#nome').value;
-    //     alert(teste)
-    // }
-    
     </script>
+</body>
 </html>

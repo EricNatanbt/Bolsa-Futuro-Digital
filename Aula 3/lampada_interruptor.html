@@ -4,36 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lâmpada com interruptor</title>
+    <link rel="stylesheet" href="estilo_lampada_interruptor.css">
 </head>
 
 <body>
-    <h1 style="color: rgb(176, 118, 12);">Lâmpada com interruptor</h1>
-    <img id="lampada" src="pic_bulbon.gif" alt="Lâmpada Ligada" style="width:200px; height:230px; margin-bottom:20px;">
+    <h1>Lâmpada com interruptor</h1>
+    <img id="lampada" src="pic_bulbon.gif" alt="Lâmpada Ligada">
 
 <br>
 
-    <button type="button" onclick="ligarLampada()" style="color: white; background-color: green;">Ligar Lâmpada</button>
-    <button type="button" onclick="desligarLampada()" style="color: white; background-color: red;">Desligar Lâmpada</button>
+    <button id="ligar" type="button" onclick="ligarLampada()">Ligar Lâmpada</button>
+    <button id="desligar" type="button" onclick="desligarLampada()">Desligar Lâmpada</button>
 
 </body>
-
-<style>
-    body {
-        background-color: rgb(240, 248, 255);
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 50px;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        color: white;
-        border: none;
-        cursor: pointer;
-        margin: 10px;
-    }
-    </style>
-
 
 <script>
     var ligarLampada = function() {

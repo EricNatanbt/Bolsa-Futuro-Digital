@@ -1,0 +1,45 @@
+/* estilo.css */
+
+body {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+}
+
+h1 {
+    color: #4a90e2;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1c6dd0;
+    box-shadow: 0 0 5px #1c6dd0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1c6dd0;
+    transform: scale(1.05);
+}

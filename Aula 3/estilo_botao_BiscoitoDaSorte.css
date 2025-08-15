@@ -1,0 +1,33 @@
+h1 {
+    color:chocolate;
+    text-shadow: 1px 1px 2px #aaa;
+    font-size:4em;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    font-weight: 1200;
+}
+
+body {
+    background: linear-gradient(to right, #d3a87e, #e7c096);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 60px;
+}
+
+button {
+    color: white;
+    background-color: chocolate;
+    padding: 20px 30px;
+    font-size: 16px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: pulse 3s infinite;
+}
+
+button:hover {
+    background-color: rgb(155, 90, 11);
+    transform: scale(1.10);
+}
