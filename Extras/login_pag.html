@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Login</h1>
+    <input type="text" id="input_usuario" placeholder="Usuário"><br>
+    <input type="password" id="input_senha" placeholder="Senha"><br>
+    <button id="botao_entrar" onclick="fazerLogin()">Entrar</button>
+  </div>
+</body>
+
+ <script>
+    function fazerLogin() {
+      let usuario = document.getElementById("input_usuario").value;
+      let senha = document.getElementById("input_senha").value;
+
+      if (usuario === "BFD" && senha === "123") {
+        window.location.href = "./menu.html"; // redireciona para Menu 
+      } else if (usuario === "eric" && senha === "456") {
+        window.location.href = "pagina2.html"; // redireciona para página 2
+      } else {
+        alert("Usuário ou senha inválidos!");
+      }
+    }
+  </script>
+
+</html>

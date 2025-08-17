@@ -1,0 +1,60 @@
+body { 
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #b1deec, #5bb1eb);
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ocupa a tela inteira */
+  margin: 0;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  color: #0e7ec9;
+  text-shadow: 1px 1px 2px #aaa;
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#botao_entrar {
+  color: white;
+  background-color: #0e7ec9;
+  padding: 12px 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#botao_entrar:hover {
+  background-color: #0a5a8b;
+  transform: scale(1.05);
+}
+
+#input_usuario, #input_senha {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#input_usuario:focus, #input_senha:focus {
+  border-color: #0e7ec9;
+  outline: none;
+}

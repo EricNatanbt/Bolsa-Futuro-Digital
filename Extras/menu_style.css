@@ -1,0 +1,70 @@
+/* -------------------- BODY -------------------- */
+body {
+  margin: 0; /* remove a margem padrão do navegador */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* define a fonte do site */
+  background: linear-gradient(135deg, #d4fc79, #96e6a1); /* define um fundo degradê diagonal verde */
+  text-align: center; /* centraliza texto dentro do body */
+  min-height: 100vh; /* garante que o body ocupe pelo menos toda a altura da tela */
+  display: flex; /* transforma o body em um container flexível */
+  flex-direction: column; /* organiza elementos em coluna (topo → baixo) */
+  justify-content: flex-start; /* alinha os elementos no topo da tela */
+}
+
+/* -------------------- TÍTULO H1 -------------------- */
+h1 {
+  margin: 0; /* remove a margem padrão do h1 */
+  color: #ffffff; /* cor do texto branco */
+  padding: 30px 20px; /* espaço interno do h1 (vertical 30px, horizontal 20px) */
+  font-weight: bold; /* deixa o texto em negrito */
+  font-size: 3em; /* tamanho do texto em "em" relativo à fonte */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* adiciona sombra ao texto */
+  border-bottom: 4px solid rgba(255,255,255,0.2); /* adiciona uma borda sutil abaixo do h1 */
+}
+
+/* -------------------- CONTAINER DAS IMAGENS -------------------- */
+.menu-container {
+  display: flex; /* transforma o container em flex */
+  justify-content: center; /* centraliza horizontalmente os elementos dentro do container */
+  flex-wrap: wrap; /* permite que os elementos quebrem para a próxima linha se não couberem */
+  gap: 30px; /* espaçamento entre as imagens */
+  padding: 40px; /* espaço interno do container */
+}
+
+/* -------------------- ESTILO DAS IMAGENS -------------------- */
+.img-link {
+  width: 420px; /* largura fixa da imagem */
+  height: 200px; /* altura fixa da imagem */
+  object-fit: cover; /* a imagem se ajusta cortando o excesso sem deformar */
+  border-radius: 15px; /* cantos arredondados da imagem */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animação suave para transformação e sombra */
+  cursor: pointer; /* cursor muda para indicar que é clicável */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* sombra padrão da imagem */
+}
+
+.img-link:hover {
+  transform: scale(1.08); /* aumenta a imagem levemente ao passar o mouse */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* aumenta a sombra no hover */
+}
+
+.img-link:active {
+  transform: scale(0.95); /* diminui a imagem quando clicada */
+}
+
+/* -------------------- BOTÃO -------------------- */
+button {
+  margin: 20px auto 40px; /* espaço ao redor do botão (topo 20px, centralizado horizontalmente, fundo 40px) */
+  padding: 12px 30px; /* espaço interno do botão (vertical 12px, horizontal 30px) */
+  font-size: 18px; /* tamanho do texto do botão */
+  background: linear-gradient(90deg, #0e7ec9, #0a189c); /* fundo degradê azul escuro → roxo */
+  color: white; /* cor do texto branco */
+  border: none; /* remove borda padrão */
+  border-radius: 8px; /* cantos arredondados */
+  cursor: pointer; /* cursor muda para indicar clicável */
+  transition: 0.3s; /* animação suave para hover */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra do botão */
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0a5a8b, #0a146e); /* muda o degradê ao passar o mouse */
+  transform: scale(1.05); /* aumenta levemente ao passar o mouse */
+}
