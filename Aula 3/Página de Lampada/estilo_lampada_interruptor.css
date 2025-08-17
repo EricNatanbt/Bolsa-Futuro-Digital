@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #e3e49b 0%, #d8d08d 50%, #e3e49b 100%);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+}
+
+h1 {
+  margin: 0; /* remove a margem padrão do h1 */
+  color: #ffffff; /* cor do texto branco */
+  padding: 30px 20px; /* espaço interno do h1 (vertical 30px, horizontal 20px) */
+  font-weight: bold; /* deixa o texto em negrito */
+  font-size: 4em; /* tamanho do texto em "em" relativo à fonte */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* adiciona sombra ao texto */
+}
+
+#lampada {
+    
+    width: 120px;
+    height: 160px;
+    margin-bottom: 30px;
+    transition: transform 0.2s;
+}
+
+button {
+    padding: 20px 25px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+#ligar {
+    background-color: green;
+}
+
+#ligar:hover {
+    background-color:darkgreen;
+    transform: scale(1.05);
+}
+
+#desligar {
+    background-color:crimson;
+}
+
+#desligar:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada com interruptor</title>
+    <link rel="stylesheet" href="estilo_lampada_interruptor.css">
+    <link rel="icon" type="image/png" href="icone_lampada.png">
+</head>
+
+<body>
+    <h1>Lâmpada com interruptor</h1>
+    <img id="lampada" src="pic_bulbon.gif" alt="Lâmpada Ligada">
+
+<br>
+
+    <button id="ligar" type="button" onclick="ligarLampada()">Ligar Lâmpada</button>
+    <button id="desligar" type="button" onclick="desligarLampada()">Desligar Lâmpada</button>
+
+</body>
+
+<script>
+    var ligarLampada = function() {
+        document.getElementById("lampada").src = "pic_bulbon.gif";
+    }
+
+    var desligarLampada = function() {
+       document.getElementById("lampada").src = "pic_bulboff.gif";
+    }
+    
+    </script>
+</html>
