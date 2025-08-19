@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar numeros pares</title>
+    <link rel="stylesheet" href="estilo_mostrar_numeros_pares.css">
+    <link rel="icon" type="image/png" href="/Aula 4/Mostrar Numeros Pares/icone_numeros_pares.png">
+</head>
+<h1>
+    <h1>Mostrar números pares</h1>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button type="button" onclick="mostrarNumeros()">Verificar</button>
+</body>
+
+<script>
+
+    let numerosPares = []; 
+
+    function mostrarNumeros() {
+        var numero = parseInt(document.getElementById("numero").value);
+
+        if (isNaN(numero) || numero < 1) {
+            alert("Por favor, digite um número válido maior que zero.");
+            return;
+        }
+        
+        for (var i = 1; i <= numero; i++) {
+            if (i % 2 === 0) {
+                numerosPares.push(i);
+            }
+        }
+        alert("Números pares até " + numero + ": " + numerosPares.join());
+        numerosPares = []; // Limpa o array para a próxima execução
+    }
+
+    
+</script>
+</html>
