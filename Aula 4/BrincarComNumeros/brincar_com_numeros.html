@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincar com numeros</title>
+    <link rel="stylesheet" href="estilo_brincar_com_numeros.css">
+    <link rel="icon" type="image/png" href="/Aula 4/BrincarComNumeros/icone_brincar_com_numeros.png">
+</head>
+<body>
+    <h1>Brincar com números</h1>
+    <p>Digite números positivos e veja a quantidade, soma e média deles.Digite 0 para finalizar.</p>
+
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button type="button" onclick="mostrarNumeros()">Verificar</button>
+</body>
+
+<script>
+    
+    let numerosDigitados = []; 
+
+    function mostrarNumeros() {
+        let numero = parseInt(document.getElementById("numero").value);
+
+        if (numero > 0) {
+            numerosDigitados.push(numero);
+        } else {
+            if (numerosDigitados.length > 0) {
+                
+                let soma = numerosDigitados.reduce((a, b) => a + b, 0);
+                let media = soma / numerosDigitados.length;
+                let quantidade = numerosDigitados.length;
+
+                alert("Quantidade de números digitados: " + quantidade + 
+                "\nSoma dos números digitados: " + soma + 
+                "\nA média dos números digitados é: " + media);
+
+            } else {
+                alert("Nenhum número válido foi digitado!");
+            }
+            numerosDigitados = []; // limpa para começar de novo
+        }
+
+        document.getElementById("numero").value = ""; // limpa o campo
+    }
+</script>
+
+</html>
