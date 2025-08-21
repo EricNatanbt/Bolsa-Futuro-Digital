@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Pessoas</title>
+</head>
+<body>
+    <h1>Cadastrar Pessoas</h1>
+
+    <form id="pessoasForm" onsubmit="event.preventDefault(); addPessoa();">
+        <input type="text" id="name" placeholder="Nome da pessoa" required>
+        <input type="number" id="age" placeholder="Idade" required>
+        <input type="text" id="cidade" placeholder="Cidade" required>
+        <button type="submit">Adicionar Pessoa</button>
+        <button type="button" onclick="mostrarPessoas()">Mostrar Pessoas</button>
+    </form>
+   
+    <p id="contagem"></p>
+
+    <div id="pessoaList">
+        <h2>Lista de Pessoas</h2>
+        <ul id="pessoas"></ul>
+    </div>
+
+    <script>
+        let pessoas = [];
+
+        function addPessoa() {
+            const nome = document.getElementById('name').value.trim();
+            const idade = document.getElementById('age').value.trim();
+            const cidade = document.getElementById('cidade').value.trim();
+
+            if (nome && idade && cidade) {
+                pessoas.push({ nome, idade, cidade });
+
+                document.getElementById('name').value = '';
+                document.getElementById('age').value = '';
+                document.getElementById('cidade').value = '';
+
+                contarPessoas();
+            }
+        }
+
+        function mostrarPessoas() {
+            const pessoaList = document.getElementById('pessoas');
+            pessoaList.innerHTML = '';
+
+            pessoas.forEach((pessoa, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = 
+                    `<strong>Pessoa ${index + 1}</strong><br>
+                     Nome: ${pessoa.nome}<br>
+                     Idade: ${pessoa.idade}<br>
+                     Cidade: ${pessoa.cidade}<br><br>`;
+                pessoaList.appendChild(li);
+            });
+        }
+
+        function contarPessoas() { 
+            document.getElementById('contagem').textContent = `Total de Pessoas: ${pessoas.length}`;
+        }
+    </script>
+</body>
+</html>

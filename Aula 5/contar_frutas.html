@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de frutas</title>
+</head>
+<body>
+    <h1>Contador de frutas</h1>
+
+    <form id="fruitForm" onsubmit="event.preventDefault(); addFrutas();">
+        <input type="text" id="fruitName" placeholder="Nome da fruta" required>
+        <button type="submit">Adicionar Fruta</button>
+        <button type="button" onclick="mostrarFrutas()">Mostrar Frutas</button>
+        <button type="button" onclick="contarFrutas()">Contar Frutas</button>
+    </form>
+   
+    <p id="contagem"></p>
+
+    <div id="fruitList">
+        <h2>Lista de Frutas</h2>
+        <ul id="fruits"></ul>
+    </div>
+
+    <script>
+        let frutas = [];
+
+        function addFrutas() {
+            const fruitName = document.getElementById('fruitName').value.trim();
+            if (fruitName) {
+                frutas.push(fruitName);
+                document.getElementById('fruitName').value = '';
+            }
+        }
+
+        function mostrarFrutas() {
+            const fruitList = document.getElementById('fruits');
+            fruitList.innerHTML = '';
+            frutas.forEach((fruta, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${index + 1}. ${fruta}`;
+                fruitList.appendChild(li);
+            });}
+
+            function contarFrutas() { 
+            document.createElement('contagem').textContent = `Total de frutas: ${frutas.length}`;
+            document.getElementById('contagem').textContent = `Total de frutas: ${frutas.length}`;
+        }
+    </script>
+</body>
+</html>
