@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Alunos</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Atividade 1 - Lista de Alunos/icone_pagina.png">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciador de Alunos</h1>
+
+    <!-- Formulário de cadastro -->
+    <form id="taskForm">
+      <div class="linha">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="number" id="idade" placeholder="Idade" required>
+      </div>
+      <div class="linha">
+        <input type="email" id="email" placeholder="Email" required>
+        <select id="sexo">
+          <option value="Feminino">Feminino</option>
+          <option value="Masculino">Masculino</option>
+        </select>
+      </div>
+      <button type="submit" id="submit">Adicionar Aluno</button>
+    </form>
+
+    <!-- Barra de filtros -->
+    <div class="filtros">
+      <input type="text" id="pesquisaNome" placeholder="Pesquisar por nome">
+      <select id="ordenar">
+        <option value="">Ordenar por</option>
+        <option value="nome">Nome (A-Z)</option>
+        <option value="idade">Idade (crescente)</option>
+        <option value="sexo">Sexo (A-Z)</option>
+      </select>
+    </div>
+
+    <!-- Lista de alunos -->
+<div class="task-box">
+  <div class="header">
+    <span class="col id">ID</span>
+    <span class="col nome">Nome</span>
+    <span class="col idade">Idade</span>
+    <span class="col sexo">Sexo</span>
+    <span class="col email">Email</span>
+    <span class="col acoes">Ações</span>
+  </div>
+  <div id="listaAlunos"></div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
