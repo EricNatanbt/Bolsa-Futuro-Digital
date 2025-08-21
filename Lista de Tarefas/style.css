@@ -1,0 +1,148 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #e6f2e6, #cde6cd);
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2.8em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #66bb6a;
+  padding-bottom: 12px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+input[type="text"], input[type="date"], select {
+  flex: 1 1 45%;
+  padding: 12px;
+  border: 1px solid #a5d6a7;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+button {
+  padding: 12px 20px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1 1 100%;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #388e3c;
+  transform: scale(1.02);
+}
+
+/* Box de tarefas estilo tabela */
+.task-box {
+  border-top: 3px solid #66bb6a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header, .task-item {
+  display: flex;
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.header {
+  font-weight: bold;
+  background: #e8f5e9;
+}
+
+.col {
+  padding: 0 10px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.col.titulo { flex: 2; }
+.col.descricao { flex: 3; }
+.col.prioridade { flex: 1; }
+.col.prazo { flex: 1; }
+.col.status { flex: 1; }
+.col.acoes { flex: 1; display: flex; gap: 8px; justify-content: center; }
+
+.concluida {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtros {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filtros input, .filtros select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #a5d6a7;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.filtros input:focus, .filtros select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+
+.task-item button.concluir { background: #66bb6a; color: #fff; }
+.task-item button.editar { background: #29b6f6; color: #fff; }
+.task-item button.remover { background: #ef5350; color: #fff; }
+
+.task-item button:hover.concluir { background: #43a047; }
+.task-item button:hover.editar { background: #0288d1; }
+.task-item button:hover.remover { background: #d32f2f; }

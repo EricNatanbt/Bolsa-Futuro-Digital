@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/Lista de Tarefas/icone_page.png">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <form id="taskForm">
+      <input type="text" id="titulo" placeholder="Título" required>
+      <input type="text" id="descricao" placeholder="Descrição">
+      <select id="prioridade">
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+      </select>
+      <input type="date" id="prazo">
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- 🔍 Pesquisa e Filtros -->
+    <div class="filtros">
+      <input type="text" id="pesquisa" placeholder="Pesquisar por título...">
+
+      <select id="ordenar">
+        <option value="">Ordenar por...</option>
+        <option value="prioridade">Prioridade</option>
+        <option value="prazo">Prazo</option>
+        <option value="status">Status</option>
+      </select>
+    </div>
+
+    <div class="task-box">
+      <div class="header">
+        <span class="col titulo">Título</span>
+        <span class="col descricao">Descrição</span>
+        <span class="col prioridade">Prioridade</span>
+        <span class="col prazo">Prazo</span>
+        <span class="col status">Status</span>
+        <span class="col acoes">Ações</span>
+      </div>
+      <div id="listaTarefas"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
