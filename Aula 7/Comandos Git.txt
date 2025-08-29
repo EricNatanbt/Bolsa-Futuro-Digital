@@ -1,0 +1,24 @@
+git init
+git status
+git add .
+git commit -m ":tada: Commit inicial"
+git branch -M main
+git remote add origin https://github.com/EricNatanbt/Sistema-de-grade-de-horario.git
+git branch nome 
+git checkout nome
+git merge nome
+
+
+
+
+Comandos GitHub:
+
+cd (diretório) -> Entrar no diretório
+cd .. -> Voltar uma pasta
+cd mkdir "Nome da pasta" -> Criar uma pasta
+
+git rm "arquivo" -> Apagar um arquivo do diretório
+git add . -> enviar todos arquivos de uma vez para o github
+git add "nome do arquivo" -> enviar um unico arquivo para o github
+git commit -m "Mensagem" -> Fazer commit
+git push -> upar pro github
