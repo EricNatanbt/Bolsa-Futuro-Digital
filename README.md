@@ -8,11 +8,11 @@ O foco principal é o desenvolvimento Front-End, utilizando tecnologias modernas
 **Tecnologias abordadas**
 
 
-- *HTML5* – Estruturação semântica e acessível.
+- *HTML* – Estruturação semântica e acessível.
 
-- *CSS3* – Estilização responsiva, animações e boas práticas de layout.
+- *CSS* – Estilização responsiva, animações e boas práticas de layout.
 
-- *JavaScript (ES6+)* – Manipulação de DOM, eventos e lógica de interação.
+- *JavaScript* – Manipulação de DOM, eventos e lógica de interação.
 
 - *TypeScript* – Tipagem estática e recursos avançados para maior segurança do código.
 
