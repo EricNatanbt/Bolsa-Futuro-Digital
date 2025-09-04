@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacao de Strings</title>
+</head>
+<body>
+    <h1>Manipulacao de string</h1>
+    <input id="stringID1" type="text" placeholder="String 1">
+    <input id="stringID2" type="text" placeholder="String 2">
+    <input id="numeroID" type="number" placeholder="Numero">
+    
+    <button onclick="verTamanhoString()">Tamanho da string</button>
+    <button onclick="concatenarString()">Concatenar String</button>
+    <button onclick="textSlice()">Texto Slice</button>
+    <button onclick="tornarMinusculo()">Tornar Minusculo</button>
+    <button onclick="tornarMaiusculo()">Tornar Maiusculo</button>
+    <button onclick="substituirTexto()">Substituir Texto</button>
+    <button onclick="inverterString()">Inverter String</button>
+    <button onclick="procurarDiferenca()">Procurar diferença</button>
+</body>
+
+<script>
+
+    function verTamanhoString () { 
+    let text = document.getElementById("stringID1").value;
+    let length = text.length;
+    alert(length);
+    }
+
+    function concatenarString() {
+        let text1 = document.getElementById("stringID1").value;
+        let text2 = document.getElementById("stringID2").value;
+        let concatenacao = text1.concat(" ", text2);
+    alert(concatenacao);
+    }
+
+    function textSlice() {
+        let text1 = document.getElementById("stringID1").value;
+        let parte = text1.slice(document.getElementById("numeroID").value);
+    alert(parte);
+    }
+
+    function tornarMinusculo() {
+        let text1 = document.getElementById("stringID1").value;
+        let minusculo = text1.toLowerCase();
+    alert(minusculo);
+    }
+
+    function tornarMaiusculo() {
+        let text1 = document.getElementById("stringID1").value;
+        let maiusculo = text1.toUpperCase();
+    alert(maiusculo);
+    }
+
+    function substituirTexto() {
+        let text1 = document.getElementById("stringID1").value;
+        let text2 = document.getElementById("stringID2").value;
+        let novotexto = text1.replace(text1, text2);
+    alert(novotexto);
+    }
+
+    function inverterString() {
+        let text1 = document.getElementById("stringID1").value;
+        let textoinvertido = text1.split("").reverse().join("");
+    alert(textoinvertido);
+    }
+
+function procurarDiferenca() {
+    let text1 = document.getElementById("stringID1").value;
+    let text2 = document.getElementById("stringID2").value; 
+
+        if (text1.length !== text2.length) {
+        alert("As strings têm comprimentos diferentes.");
+    } else {
+        for (let i = 0; i < text1.length; i++) {
+        if (text1[i] !== text2[i]) {
+            alert("A letra diferente está na posição " + (i+1));
+            break;
+        }
+    }
+    }
+}
+
+</script>
+</html>
