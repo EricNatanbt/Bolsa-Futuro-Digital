@@ -1,1 +1,1 @@
-Aula foi sobre metodo SCRUM e algumas lógicas de javascript
+Aula foi sobre metodo SCRUM e algumas lógicas de javascript.
