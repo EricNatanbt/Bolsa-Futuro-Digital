@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de tarefas colaborativas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> Lista de tarefas Colaborativa</h1> 
+
+    <div class="card">
+      <p>Plataforma para organização colaborativa de tarefas, que promove a comunicação eficiente e o trabalho integrado da equipe.</p>
+    </div>
+    
+    <div class="input-group">
+      <input type="text" id="pessoa" placeholder="Digite seu nome">
+      <input type="text" id="tarefa" placeholder="Digite o nome da tarefa">
+      <select name="dias" id="dias">
+        <option value="segunda">Segunda-Feira</option>
+        <option value="terca">Terça-Feira</option>
+        <option value="quarta">Quarta-Feira</option>
+        <option value="quinta">Quinta-Feira</option>
+        <option value="sexta">Sexta-Feira</option>
+        <option value="sabado">Sábado</option>
+        <option value="domingo">Domingo</option>
+      </select>
+      
+      <button id="btnAdicionar" type="button" class="btn btn-primary">Adicionar Tarefa</button>
+    </div>
+
+    
+    <div id="tarefas-container"></div>
+    
+    <footer>
+      <p>Aula 10 - Autores: Eric | Kayllane | Gabriella | M. Eduarda </p>
+    </footer>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html> 
