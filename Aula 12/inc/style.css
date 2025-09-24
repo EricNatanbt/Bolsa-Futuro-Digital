@@ -1,0 +1,55 @@
+.secao1 {
+  border: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  color: coral;
+}
+
+.secao2 {
+  border: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  color: rgb(94, 13, 81);
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: blue;
+  font-size: 24px;
+  text-align: center;
+}
+
+.testo1 {
+  color: red;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.testo2 {
+  color: green;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.testo3 {
+  color: blue;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.caixa ul li {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

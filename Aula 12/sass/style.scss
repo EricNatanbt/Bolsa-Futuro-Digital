@@ -1,0 +1,52 @@
+
+@use 'secao1';
+@use 'secao2';
+
+$cor: blue;
+$tamanho-fonte: 24px;
+$estilo-fonte: bold;
+$tipo-fonte: Arial, sans-serif;
+
+body {
+    font-family: $tipo-fonte;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: $cor;
+    font-size: 24px;
+    text-align: center;
+}
+
+.testo1 {
+    color: red;
+    font-size: $tamanho-fonte;
+    font-family: $tipo-fonte;
+    font-weight: $estilo-fonte;
+}
+
+.testo2 {
+    color: green;
+    font-size: $tamanho-fonte;
+    font-family: $tipo-fonte;
+    font-weight: $estilo-fonte;
+}
+
+.testo3 {
+    color: $cor;
+    font-size: $tamanho-fonte;
+    font-family: $tipo-fonte;
+    font-weight: $estilo-fonte;
+}
+
+.caixa {
+    ul {
+        li {
+            color: $cor;
+            font-family: $tipo-fonte;
+        }
+    }
+}
+
