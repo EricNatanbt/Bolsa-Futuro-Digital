@@ -1,0 +1,61 @@
+$highlight-color1: #a20616;
+$highlight-color2: #2880eb;
+$highlight-color3: #0a820c;
+$spacing: 16px;
+$card-colors: ($highlight-color1, $highlight-color2, $highlight-color3);
+
+%titulo-card {
+  font-size: 1.6rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: $spacing / 2;
+}
+
+%texto-card {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+@mixin card-estilizado($raio, $sombra, $cor) {
+  border-radius: $raio;
+  box-shadow: $sombra;
+  padding: $spacing;
+  border-top: 4px solid $cor;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+body {
+    background-color: #c1c0c0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $spacing;
+  padding: $spacing;
+
+  .card {
+    @for $i from 1 through length($card-colors) {
+        &:nth-child(#{$i}) {
+            @include card-estilizado(10px, 0px 4px 8px rgba(0,0,0,0.15), nth($card-colors, $i));
+        }
+    }
+
+    h3 {
+      @extend %titulo-card;
+    }
+
+    p {
+      @extend %texto-card;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
