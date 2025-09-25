@@ -1,0 +1,1 @@
+sass -w '.\Aula 12\sass\:.\Aula12\inc'
