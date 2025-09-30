@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orkut - Login</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .orkut-gradient {
+            background: linear-gradient(135deg, #e8c0ef 0%, #e8c0ef 50%, #e8c0ef 100%);
+        }
+        
+        .orkut-shadow {
+            box-shadow: 0 20px 40px rgba(236, 72, 153, 0.3);
+        }
+
+        
+
+    </style>
+</head>
+<body class="min-h-screen orkut-gradient flex items-center justify-center p-4">
+    <div class="w-full max-w-md">
+        <!-- Logo Orkut -->
+        <div class="text-center mb-12">
+            <img src="../img/logo.png" alt="Logo Orkut" class="mx-auto drop-shadow(0px 0px 5px #e8258e)">
+        </div>
+        
+        <!-- Card de Login -->
+        <div class="bg-white rounded-3xl p-8 orkut-shadow">
+            <!-- Título -->
+            <div class="text-center mb-8">
+                <p class="text-gray-700 text-lg">
+                    Acesse o <span class="text-pink-500 font-semibold">Orkut</span> com a sua conta 
+                    <span style="color: #4361ee">G</span><span style="color: #e8258e">o</span><span style="color: #ffbe0b">o</span><span style="color: #4361ee">g</span><span style="color: #06d6a0">l</span><span style="color: #e8258e">e</span>!
+                </p>
+            </div>
+            
+            <!-- Formulário -->
+            <form class="space-y-6">
+                <!-- Campo E-mail -->
+                <div>
+                    <input 
+                        type="text" 
+                        placeholder="E-mail ou número de celular"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-700 placeholder-gray-500"
+                    >
+                </div>
+                
+                <!-- Campo Senha -->
+                <div>
+                    <input 
+                        type="password" 
+                        placeholder="Senha"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-700 placeholder-gray-500"
+                    >
+                </div>
+                
+                <!-- Checkbox -->
+                <div class="flex items-center">
+                    <input 
+                        type="checkbox" 
+                        id="remember" 
+                        class="w-4 h-4 text-pink-500 border-gray-300 rounded focus:ring-pink-500"
+                    >
+                    <label for="remember" class="ml-3 text-gray-700 text-sm">
+                        Lembrar sempre do meu acesso
+                    </label>
+                </div>
+                
+                <!-- Botão Entrar -->
+                <button 
+                    type="submit"
+                    class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 uppercase tracking-wide"
+                >
+                    ENTRAR
+                </button>
+                
+                <!-- Link Esqueci Senha -->
+                <div class="text-center">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 text-sm transition-colors duration-200">
+                        Esqueci minha senha ou e-mail
+                    </a>
+                </div>
+            </form>
+            
+            <!-- Separador e Link Criar Conta -->
+            <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+                <p class="text-gray-700">
+                    Não tem conta? 
+                    <a href="#" class="text-pink-500 hover:text-pink-600 font-semibold transition-colors duration-200">
+                        Criar agora
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
