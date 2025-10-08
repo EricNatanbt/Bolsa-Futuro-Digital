@@ -64,31 +64,31 @@ function getSize(baseWidth, baseHeight, localScale = 1.0) {
 // Carregamento de Imagens
 // ============================================
 const playerImg = new Image();
-playerImg.src = 'assets/images/player.png';
+playerImg.src = 'images/player.png';
 
 const enemyBasicImg = new Image();
-enemyBasicImg.src = 'assets/images/enemy_basic.png';
+enemyBasicImg.src = 'images/enemy_basic.png';
 
 const enemyFastImg = new Image();
-enemyFastImg.src = 'assets/images/enemy_fast.png';
+enemyFastImg.src = 'images/enemy_fast.png';
 
 const enemyTankImg = new Image();
-enemyTankImg.src = 'assets/images/enemy_tank.png';
+enemyTankImg.src = 'images/enemy_tank.png';
 
 const bulletPlayerImg = new Image();
-bulletPlayerImg.src = 'assets/images/bullet_player.png';
+bulletPlayerImg.src = 'images/bullet_player.png';
 
 const bulletEnemyImg = new Image();
-bulletEnemyImg.src = 'assets/images/bullet_enemy.png';
+bulletEnemyImg.src = 'images/bullet_enemy.png';
 
 const powerupRapidFireImg = new Image();
-powerupRapidFireImg.src = 'assets/images/powerup_rapidfire.png';
+powerupRapidFireImg.src = 'images/powerup_rapidfire.png';
 
 const powerupShieldImg = new Image();
-powerupShieldImg.src = 'assets/images/powerup_shield.png';
+powerupShieldImg.src = 'images/powerup_shield.png';
 
 const powerupLifeImg = new Image();
-powerupLifeImg.src = 'assets/images/powerup_life.png';
+powerupLifeImg.src = 'images/powerup_life.png';
 
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext('2d');
