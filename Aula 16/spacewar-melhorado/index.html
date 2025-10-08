@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Space War — Enhanced Edition</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Space War <span class="enhanced">Enhanced</span></h1>
+      <div class="hud">
+        <div>Pontos: <span id="score">0</span></div>
+        <div>Vidas: <span id="lives">3</span></div>
+        <div id="shield-indicator" class="shield-off">🛡️</div>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="game" width="480" height="640" aria-label="Canvas do jogo Space War"></canvas>
+
+      <!-- Tela de Início -->
+      <div id="start-screen" class="screen">
+        <h2>Space War</h2>
+        <h3>Enhanced Edition</h3>
+        <div class="instructions">
+          <p>🎮 Use <strong>← → ↑ ↓</strong> ou <strong>W A S D</strong> para mover</p>
+          <p>🔫 Clique com o <strong>botão esquerdo do mouse</strong> para atirar</p>
+          <p>⏸️ Pressione <strong>Espaço</strong> para pausar/continuar</p>
+          <p>⭐ Colete power-ups para melhorar sua nave</p>
+        </div>
+        <button id="start-game" class="big-button">Iniciar Jogo</button>
+        <div class="difficulty-selector">
+          <label for="difficulty-select">Dificuldade:</label>
+          <select id="difficulty-select">
+            <option value="1">Fácil</option>
+            <option value="1.5" selected>Médio</option>
+            <option value="2">Difícil</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Tela de Game Over -->
+      <div id="gameover-screen" class="screen hidden">
+        <h2>Game Over</h2>
+        <div class="final-score">
+          <p>Pontuação Final</p>
+          <h3 id="final-score-value">0</h3>
+        </div>
+        <button id="restart-game" class="big-button">Jogar Novamente</button>
+      </div>
+
+      <div class="controls">
+        <button id="pause">Pausar</button>
+        <button id="restart">Reiniciar</button>
+        <label for="difficulty">Dificuldade</label>
+        <select id="difficulty">
+          <option value="1">Fácil</option>
+          <option value="1.5" selected>Médio</option>
+          <option value="2">Difícil</option>
+        </select>
+      </div>
+
+      <p class="hint">Use W A S D ou setas para mover | Clique com o mouse para atirar | Espaço para pausar</p>
+    </main>
+
+    <footer>
+      <small>Space War Enhanced — Versão Melhorada — Eric Natan</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
