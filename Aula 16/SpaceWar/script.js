@@ -1,5 +1,3 @@
-// script.js — Space War Enhanced Edition
-
 // ============================================
 // CONFIGURAÇÕES DE TAMANHO (MODIFICÁVEIS)
 // ============================================
@@ -120,7 +118,7 @@ const player = {
   h: playerSize.h,
   speed: 7,
   bullets: [],
-  fireRate: 100, // ms entre tiros
+  fireRate: 100, 
   lastShot: 0,
   shield: false,
   shieldTimer: 0,
@@ -133,7 +131,7 @@ let enemies = [];
 let enemyBullets = [];
 let powerups = [];
 let particles = [];
-let stars = []; // estrelas para fundo paralaxe
+let stars = []; 
 let score = 0;
 let lives = 3;
 let lastTime = 0;
@@ -183,8 +181,8 @@ const EnemyTypes = {
   },
   TANK: { 
     color: '#ff6b6b', 
-    hp: 3, 
-    speed: 3, 
+    hp: 3,  
+    speed: 2, 
     score: 25, 
     shootInterval: 1500, 
     img: enemyTankImg, 
