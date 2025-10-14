@@ -162,7 +162,7 @@ const EnemyTypes = {
   BASIC: { 
     color: '#66ff6b', 
     hp: 1, 
-    speed: 1.5, 
+    speed: 2, 
     score: 10, 
     shootInterval: 1000, 
     img: enemyBasicImg, 
@@ -182,7 +182,7 @@ const EnemyTypes = {
   TANK: { 
     color: '#ff6b6b', 
     hp: 3,  
-    speed: 2, 
+    speed: 1.5, 
     score: 25, 
     shootInterval: 1500, 
     img: enemyTankImg, 
