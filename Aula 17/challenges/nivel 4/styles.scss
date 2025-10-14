@@ -1,0 +1,79 @@
+$cor-fundo: #f0f4ff;
+$cor-titulo: #2888ad;
+$cor-botao: #18c5d1;
+
+body {
+  background-color: $cor-fundo;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: $cor-titulo;
+}
+
+// Mixin reutilizável para botões
+@mixin estilo-botao($cor) {
+  background-color: $cor;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: darken($cor, 10%);
+  }
+}
+
+.btn {
+  @include estilo-botao($cor-botao);
+  margin: 5px;
+}
+
+// Aninhamento em menu de navegação
+nav {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      a {
+        text-decoration: none;
+        color: $cor-titulo;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Extends para alertas
+.alerta {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 250px;
+  color: white;
+}
+
+.alerta-sucesso {
+  @extend .alerta;
+  background-color: #4caf50;
+}
+
+.alerta-erro {
+  @extend .alerta;
+  background-color: #f44336;
+}
